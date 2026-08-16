@@ -39,10 +39,10 @@
         <div class="container mx-auto flex flex-col md:flex-row items-center">
             <div class="md:w-1/2 mb-12 md:mb-0">
                 <h1 class="text-4xl md:text-6xl font-extrabold mb-6">Your Safety, <br>Our Priority.</h1>
-                <p class="text-xl mb-8 opacity-90 leading-relaxed">SafeHer is a comprehensive women's safety app designed to provide instant help in emergency situations with just one tap.</p>
+                <p class="text-xl mb-8 opacity-90 leading-relaxed">SafeHer is a comprehensive women's safety app designed to provide instant help in emergency situations with Voice Activation or Power Button press.</p>
                 <div class="flex space-x-4">
-                    <a href="#download" class="bg-white text-purple-700 px-8 py-4 rounded-xl font-bold flex items-center shadow-2xl hover:scale-105 transition transform">
-                        <i class="fab fa-google-play mr-2 text-2xl"></i> Get it on PlayStore
+                    <a href="SafeHer.apk" download class="bg-white text-purple-700 px-8 py-4 rounded-xl font-bold flex items-center shadow-2xl hover:scale-105 transition transform">
+                        <i class="fas fa-download mr-2 text-2xl"></i> Download APK Now
                     </a>
                 </div>
             </div>
@@ -56,15 +56,52 @@
                     <!-- If real screenshot exists it shows here, else a beautiful placeholder -->
                     <div class="relative w-full h-full flex flex-col">
                         <img src="app_screenshot.png" alt="" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.style.display='none'">
-                        <div class="w-full h-full purple-gradient flex flex-col items-center justify-center p-6 text-center space-y-4">
-                            <i class="fas fa-shield-heart text-6xl text-white opacity-80"></i>
-                            <h4 class="text-white font-bold text-xl">SafeHer</h4>
-                            <p class="text-white text-xs opacity-70">Empowering Safety with Technology</p>
-                            <div class="grid grid-cols-2 gap-2 w-full pt-4">
-                                <div class="bg-white/10 h-8 rounded-lg"></div>
-                                <div class="bg-white/10 h-8 rounded-lg"></div>
-                                <div class="bg-white/10 h-8 rounded-lg"></div>
-                                <div class="bg-white/10 h-8 rounded-lg"></div>
+                        <div class="w-full h-full purple-gradient flex flex-col items-center justify-start p-4 text-center space-y-4 pt-12">
+                            <i class="fas fa-shield-heart text-5xl text-white opacity-90 mb-2"></i>
+                            <h4 class="text-white font-bold text-lg">SafeHer</h4>
+
+                            <!-- Mocking the SOS Button -->
+                            <div class="w-24 h-24 rounded-full bg-red-600 border-4 border-white/30 flex items-center justify-center shadow-lg my-4">
+                                <span class="text-white font-black text-xl">SOS</span>
+                            </div>
+
+                            <div class="grid grid-cols-3 gap-2 w-full pt-2">
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-users text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Contacts</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-phone-alt text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Call</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-bullhorn text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Siren</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-map-marker-alt text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Location</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-clock text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Timer</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-robot text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">AI Chat</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-microphone-alt text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Evidence</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-bolt text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Flashlight</span>
+                                </div>
+                                <div class="flex flex-col items-center space-y-1">
+                                    <div class="bg-white/20 w-10 h-10 rounded-xl flex items-center justify-center"><i class="fas fa-phone-square text-xs text-white"></i></div>
+                                    <span class="text-[8px] text-white opacity-80">Emergency</span>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -87,16 +124,16 @@
                     <i class="fas fa-bullhorn text-2xl"></i>
                 </div>
                 <h3 class="text-xl font-bold mb-4">Instant SOS</h3>
-                <p class="text-gray-600">Send emergency alerts and your live location to trusted contacts with a single tap or phone shake.</p>
+                <p class="text-gray-600">Send emergency alerts and your live location to trusted contacts with 3 times Power Button press or "Help Help" voice command.</p>
             </div>
 
             <!-- Feature 2 -->
             <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition group">
                 <div class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:scale-110 transition">
-                    <i class="fas fa-phone-alt text-2xl"></i>
+                    <i class="fas fa-address-book text-2xl"></i>
                 </div>
-                <h3 class="text-xl font-bold mb-4">Fake Call</h3>
-                <p class="text-gray-600">Escape uncomfortable situations by triggering a realistic-looking fake incoming call instantly.</p>
+                <h3 class="text-xl font-bold mb-4">Emergency Contacts</h3>
+                <p class="text-gray-600">Add up to 5 trusted contacts. Quickly call anyone from your list or alert them all instantly during an emergency.</p>
             </div>
 
             <!-- Feature 3 -->
@@ -107,6 +144,33 @@
                 <h3 class="text-xl font-bold mb-4">Safety Timer</h3>
                 <p class="text-gray-600">Set a timer when walking alone. If you don't check in, your location is automatically sent to family.</p>
             </div>
+
+            <!-- Feature 4 -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition group">
+                <div class="w-16 h-16 bg-yellow-100 rounded-2xl flex items-center justify-center text-yellow-600 mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-microphone-alt text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Evidence Recorder</h3>
+                <p class="text-gray-600">Instantly record audio evidence in emergency situations. The recording is saved securely on your device.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition group">
+                <div class="w-16 h-16 bg-purple-100 rounded-2xl flex items-center justify-center text-purple-600 mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-robot text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">AI Assistant</h3>
+                <p class="text-gray-600">Get safety tips, legal advice, and instant help through our integrated AI Safety Assistant chat.</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition group">
+                <div class="w-16 h-16 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 mb-6 group-hover:scale-110 transition">
+                    <i class="fas fa-exclamation-triangle text-2xl"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-4">Siren & Flashlight</h3>
+                <p class="text-gray-600">Attract attention instantly with a loud siren and high-intensity flashlight strobe for nighttime safety.</p>
+            </div>
         </div>
     </section>
 
@@ -116,9 +180,9 @@
             <h2 class="text-4xl font-bold mb-6">Ready to feel safer?</h2>
             <p class="text-xl text-gray-400 mb-10 max-w-2xl mx-auto">Join thousands of women who trust SafeHer for their daily safety and peace of mind.</p>
             <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
-                <button class="bg-purple-600 hover:bg-purple-700 px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center transition shadow-lg">
-                    <i class="fab fa-google-play mr-3"></i> Download APK
-                </button>
+                <a href="SafeHer.apk" download class="bg-purple-600 hover:bg-purple-700 px-10 py-5 rounded-2xl font-bold text-xl flex items-center justify-center transition shadow-lg">
+                    <i class="fas fa-download mr-3"></i> Download APK
+                </a>
             </div>
             <p class="mt-8 text-gray-500">Available for Android 8.0 and above</p>
         </div>
